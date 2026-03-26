@@ -1,0 +1,84 @@
+/* --- Batman Loading Screen --- */
+#loader {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #0d1117;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: #3fb950;
+}
+
+.bat-spinner {
+    font-size: 4rem;
+    color: #3fb950;
+    margin-bottom: 20px;
+    animation: bat-pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes bat-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 5px #3fb950); }
+    50% { transform: scale(1.2); opacity: 0.7; filter: drop-shadow(0 0 20px #3fb950); }
+}
+
+/* --- Terminal Styling (Keep from previous version) --- */
+:root {
+    --bg-color: #0d1117;
+    --terminal-header: #21262d;
+    --text-green: #3fb950;
+    --text-blue: #58a6ff;
+    --text-white: #c9d1d9;
+    --accent-glow: rgba(63, 185, 80, 0.1);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.terminal-container {
+    width: 100%;
+    max-width: 500px;
+    background: #161b22;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.terminal-header { background: var(--terminal-header); padding: 10px 15px; display: flex; }
+.buttons { display: flex; gap: 8px; }
+.buttons span { width: 12px; height: 12px; border-radius: 50%; }
+.btn-red { background: #ff5f56; }
+.btn-yellow { background: #ffbd2e; }
+.btn-green { background: #27c93f; }
+
+.terminal-body { padding: 30px 20px; }
+.prompt { color: var(--text-blue); margin-bottom: 8px; font-size: 14px; }
+.cmd { color: var(--text-white); }
+h1 { color: var(--text-green); font-size: 24px; }
+.subtitle { color: #8b949e; font-size: 14px; margin-bottom: 30px; }
+
+.links-grid { display: flex; flex-direction: column; gap: 15px; }
+.link-item {
+    text-decoration: none;
+    color: var(--text-white);
+    border: 1px solid #30363d;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.link-item i { color: var(--text-green); }
+.link-item:hover { background: var(--accent-glow); border-color: var(--text-green); transform: translateX(5px); }
+
+.cursor { display: inline-block; width: 8px; height: 15px; background: var(--text-green); animation: blink 1s infinite; }
+@keyframes blink { 50% { opacity: 0; } }
