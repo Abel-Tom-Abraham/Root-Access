@@ -3,73 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abel Tom Abraham | Root Links</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Abel Tom Abraham | Root Access</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loader">
+
+    <div id="preloader">
         <div class="bat-spinner">
             <i class="fas fa-mask"></i>
         </div>
-        <p>Initializing System...</p>
+        <div class="preloader-text">INITIALIZING ROOT_ACCESS...</div>
     </div>
 
-    <div class="terminal-container">
-        <div class="terminal-header">
+    <div class="cyber-grid"></div>
+    <div class="glow-orb"></div>
+
+    <div class="terminal-hud">
+        <div class="hud-header">
             <div class="buttons">
                 <span class="btn-red"></span>
                 <span class="btn-yellow"></span>
                 <span class="btn-green"></span>
             </div>
-            <div class="title">abel@devops: ~/links</div>
+            <div class="title">ROOT_ACCESS // ONLINE</div>
         </div>
 
-        <main class="terminal-body">
+        <div class="hud-body">
+            
             <header class="profile-section">
-                <div class="prompt">guest@portfolio:~$ <span class="cmd">whoami</span></div>
+                <div class="avatar-ring">
+                    <div class="avatar-inner">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                </div>
+                
                 <h1>Abel Tom Abraham</h1>
-                <p class="subtitle">Technical Engineer | Linux Expert | Aspiring Dev</p>
+                <p class="subtitle">Technical Engineer & Developer</p>
             </header>
 
             <section class="links-section">
-                <div class="prompt">guest@portfolio:~$ <span class="cmd">ls --links</span></div>
+                <div class="prompt">root@system:~$ <span class="cmd">./execute_links.sh</span></div>
                 
                 <div class="links-grid">
-                    <a href="https://www.linkedin.com/in/abel-tom-abraham-492994223" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      class="link-item">
-                      <i class="fab fa-linkedin"></i> LinkedIn
+                    <a href="https://www.linkedin.com/in/abel-tom-abraham-492994223" target="_blank" rel="noopener noreferrer" class="link-item">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
                     </a>
-                    <a href="#" target="_blank" class="link-item">
-                        <i class="fab fa-github"></i> GitHub Code
+                    <a href="https://github.com/Abel-Tom-Abraham" target="_blank" rel="noopener noreferrer" class="link-item">
+                        <i class="fab fa-github"></i> GitHub Repositories
                     </a>
                     <a href="mailto:abeltom2k03@gmail.com" class="link-item">
-                        <i class="fas fa-envelope"></i> Email Me
+                        <i class="fas fa-envelope"></i> Secure Email Ping
                     </a>
-                    <a href="https://abel-tom-abraham.github.io/Abel_Portfolio/" target="_blank" class="link-item">
-                        <i class="fas fa-folder-open"></i> Portfolio
+                    <a href="https://abel-tom-abraham.github.io/Abel_Portfolio/" target="_blank" rel="noopener noreferrer" class="link-item">
+                        <i class="fas fa-folder-open"></i> Full Portfolio
                     </a>
                 </div>
             </section>
 
             <footer class="terminal-footer">
-                <p style="font-size: 10px; color: #8b949e; margin-top: 20px;">
-                     [SYSTEM NOTE]: If links fail to redirect, select "Open in Browser" from the menu.
-                </p>
-                <div class="prompt">guest@portfolio:~$ <span class="cursor">_</span></div>
+                <div class="prompt">root@system:~$ <span class="cursor">_</span></div>
+                <div class="sys-note">
+                    [Note]: If links fail to open in Instagram, tap (•••) and select "Open in Browser".
+                </div>
             </footer>
-        </main>
+        </div>
     </div>
 
-    <script>
-        // Hide loader after 2 seconds
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('loader').style.display = 'none';
-            }, 2000);
-        });
-    </script>
 </body>
 </html>
